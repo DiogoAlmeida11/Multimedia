@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+</head>
+<body>
+    <a-scene>
+        <a-scene>
+            <a-ssets>
+                <img id="metal" src="metal.jpg">
+                <img id="metal_normal" src="metal_normal.jpg">
+    
+            </a-ssets>
+            <a-box color="red" position="-3 1 -6" width="4" depth="4" height="4" src="#metal" repeat="1 1" normal-map="#metal_normal" normal-scale="1 -1"  side="double"></a-box> 
+            <a-ssets>
+                <img id="tijolo" src="tijolo.jpg">
+                <img id="tijolo_normal" src="tijolo_normal.jpg">
+    
+            </a-ssets>
+            <a-box color="white" position="3 1 -6" width="4" depth="4" height="4" src="#tijolo" repeat="1 1" normal-map="#tijolo_normal" roughness="0.9" side="double"></a-box>
+            
+        </a-scene>
+        <a-ligth type="ambient" intensity="1"></a-ligth>
+        <a-ligth type="point" intensity="1" distance="10" position="0 1 -3"></a-ligth>
+</body>
+</html>
