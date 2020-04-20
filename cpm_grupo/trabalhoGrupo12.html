@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +16,82 @@
 </head>
 <body>
     <a-scene>
+        <!-- Audios -->
+        <a-sound id="Sominimigo" src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2FAlien.m4a?v=1587323585459" preload="auto" volume="1"></a-sound> 
+
+        
+
+        <a-entity animation__viajar="property: position; dur: 60000; delay:1000; loop: false; to: 0 0 200;">
+        <!-- Estrelas -->
+        <a-entity id="estrelas" position ="-483.443 -63.492 -187.175">
+            <a-gltf-model
+            scale = "5 5 5"
+            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fspace.glb?v=1587144441146"></a-gltf-model>
+        </a-entity>
+        
+        <!-- Estrelas -->
+        <a-entity id="estrelas" position ="-483.443 -63.492 387.175">
+            <a-gltf-model
+            scale = "5 5 5"
+            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fspace.glb?v=1587144441146"></a-gltf-model>
+        </a-entity>
+       
+        <!-- Neptuno -->
+        <a-entity id="neptuno" position="-3.5 2 -95" animation__spin="property: rotation; dur: 52000; loop: true; to: 0 1490 0;">
+            <a-gltf-model 
+            scale = "0.5 0.5 0.5"
+            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fneptuno.glb?v=1587243176425" animation-mixer></a-gltf-model>
+        </a-entity>
+
+        <!-- Urano -->
+        <a-entity id="urano" position="5 2 -70" animation__spin="property: rotation; dur: 52000; loop: true; to: 0 1490 0;">
+            <a-gltf-model 
+            scale = "0.5 0.5 0.5"
+            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Furano.glb?v=1587241506240" animation-mixer></a-gltf-model>
+        </a-entity>
+
+         <!-- Saturno -->
+         <a-entity id="saturno" position="-9 2 -55" animation__spin="property: rotation; dur: 62000; loop: true; to: 0 1490 0;">
+            <a-gltf-model 
+            scale = "2 2 2"
+            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fsaturno.glb?v=1587241025301" animation-mixer></a-gltf-model>
+        </a-entity>
+
+        <!-- Jupiter -->
+        <a-entity id="jupiter" position="-13 2 -30" animation__spin="property: rotation; dur: 42000; loop: true; to: 0 1490 0;">
+            <a-gltf-model 
+            scale = "2 2 2"
+            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fjupiter.glb?v=1587239955091" animation-mixer></a-gltf-model>
+        </a-entity>
+
+        <!-- Marte -->
+        <a-entity id="marte" position="-4 1.5 -5" animation__spin="property: rotation; dur: 42000; loop: true; to: 0 1490 0;">
+            <a-gltf-model 
+            scale = "0.3 0.3 0.3"
+            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fmars.glb?v=1587239473893" animation-mixer></a-gltf-model>
+        </a-entity>
+
+        <!-- Sol -->
+        <a-entity id="sol" position="4.902 1.5 40" animation__spin="property: rotation; dur: 62000; loop: true; to: 0 1490 0;">
+            <a-gltf-model 
+            scale = "0.2 0.2 0.2"
+            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fsun.glb?v=1587144421562"></a-gltf-model>
+        </a-entity>
+
+        <!-- Terra -->
+        <a-entity id="terra" position ="0 0.751 16.765" animation__spin="property: rotation; dur: 52000; loop: true; to: 0 1490 0;">
+            <a-gltf-model
+            scale = "0.009 0.009 0.009"
+            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fearth.glb?v=1587128473106"></a-gltf-model>
+        </a-entity>
+
+        <!-- Asteroide -->
+        <a-entity id="asteroide" position ="7.272 1.451 -16.149" animation__spin="property: rotation; dur: 52000; loop: true; to: 0 1490 0;">
+            <a-gltf-model
+            scale = "1.000 1.000 1.000"
+            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fasteroide.glb?v=1587306728178"></a-gltf-model>
+        </a-entity>    
+    </a-entity>
 
         <!-- Inimigo -->
         <a-entity id='ball'
@@ -30,80 +107,12 @@
             src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Falien.glb?v=1587126993295"></a-gltf-model>
         </a-entity>
 
-
-        <a-entity animation__swoop="property: position; dur: 60000; delay:1000; loop: false; to: 0 0 200;">
-        <!-- Estrelas -->
-        <a-entity id="estrelas" position ="-483.443 -63.492 -147.175">
-            <a-gltf-model
-            scale = "5.000 0.500 5.000"
-            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fspace.glb?v=1587144441146"></a-gltf-model>
-        </a-entity>
-       
-        <!-- Neptuno -->
-        <a-entity id="neptuno" position="-5 2 -95" animation__spin="property: rotation; dur: 52000; loop: true; to: 0 1490 0;">
-            <a-gltf-model 
-            scale = "0.5 0.5 0.5"
-            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fneptuno.glb?v=1587243176425" animation-mixer></a-gltf-model>
-        </a-entity>
-
-        <!-- Urano -->
-        <a-entity id="urano" position="5 2 -70" animation__spin="property: rotation; dur: 52000; loop: true; to: 0 1490 0;">
-            <a-gltf-model 
-            scale = "0.5 0.5 0.5"
-            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Furano.glb?v=1587241506240" animation-mixer></a-gltf-model>
-        </a-entity>
-
-         <!-- Saturno -->
-         <a-entity id="saturno" position="-5 2 -55" animation__spin="property: rotation; dur: 62000; loop: true; to: 0 1490 0;">
-            <a-gltf-model 
-            scale = "1 1 1"
-            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fsaturno.glb?v=1587241025301" animation-mixer></a-gltf-model>
-        </a-entity>
-
-        <!-- Jupiter -->
-        <a-entity id="jupiter" position="-8 2 -30" animation__spin="property: rotation; dur: 42000; loop: true; to: 0 1490 0;">
-            <a-gltf-model 
-            scale = "2 2 2"
-            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fjupiter.glb?v=1587239955091" animation-mixer></a-gltf-model>
-        </a-entity>
-
-        <!-- Marte -->
-        <a-entity id="marte" position="-3 1.5 5" animation__spin="property: rotation; dur: 42000; loop: true; to: 0 1490 0;">
-            <a-gltf-model 
-            scale = "0.2 0.2 0.2"
-            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fmars.glb?v=1587239473893" animation-mixer></a-gltf-model>
-        </a-entity>
-
-        <!-- Sol -->
-        <a-entity id="sol" position="4.902 2 33" animation__spin="property: rotation; dur: 62000; loop: true; to: 0 1490 0;">
-            <a-light type="point" color="white" intensity="1"></a-light>
-            <a-gltf-model 
-            scale = "0.2 0.2 0.2"
-            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fsun.glb?v=1587144421562"></a-gltf-model>
-        </a-entity>
-
-        <!-- Terra -->
-        <a-entity id="terra" position ="0 0.751 16.765" animation__spin="property: rotation; dur: 52000; loop: true; to: 0 1490 0;">
-            <a-gltf-model
-            scale = "0.009 0.009 0.009"
-            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fearth.glb?v=1587128473106"></a-gltf-model>
-        </a-entity>
-          
-        <!-- Asteroide -->
-        <a-entity id="asteroide" position ="7.272 1.451 -46.149" animation__spin="property: rotation; dur: 52000; loop: true; to: 0 1490 0;">
-            <a-gltf-model
-            scale = "1.000 1.000 1.000"
-            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fasteroide.glb?v=1587306728178"></a-gltf-model>
-        </a-entity>
-          
         <!-- Alienship -->
-        <a-entity id="alienship" position ="7.675 0.000 -13.293" rotation="0 30.000 0" >
+        <a-entity id="alienship" position ="0 -1 -24.012" rotation="0 30.000 0" >
             <a-gltf-model
             scale = "1.800 1.800 1.800"
             src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Falienship.glb?v=1587307790615"></a-gltf-model>
         </a-entity>
-    </a-entity>
-
 
         <!-- Nave -->
         <a-gltf-model id="nave" position="0 0.292 14.012"
@@ -117,11 +126,15 @@
         rotation = "0 90.000  90.000"
         src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Ffire.glb?v=1587241901579" animation-mixer></a-gltf-model>
 
+        <!-- Tiro -->
+        <a-entity id="PosTiro" position="-0.049 -3 14.024" rotation= "0 0 0" dynamic-body>
+          <a-sphere id="tiro" color="red"  position="-0.007 -0.01 -5.075" scale="1 1 1"></a-sphere>
+          </a-entity>
+
         <!-- Jogador -->
         <a-entity  id="camera" camera="active: true" look-controls position="0.001 1.792 13.850" scale="1 1 1">
             <a-light type="point" color="white" intensity="1" distance="2.370"></a-light>
             <a-text id="score" value="Score" position="-0.2 0.7 -1" color="red" width="2" anchor="left"></a-text>
-            <a-sphere id="tiro" color="red"  position="0.001 1.792 13.850" scale="0.2 0.2 0.2" dynamic-body></a-sphere>
             <a-entity  position="0.096 -0.067 -0.009" scale="0.500 0.500 0.500">
                 <a-light type="point" color="white" intensity="1" distance="2.370"></a-light>
                 <a-gltf-model id='weapon'
@@ -132,8 +145,8 @@
         </a-entity>
 
          <!-- Luz Ambiente -->
-        <a-entity position="0.003 2.652 14.100" scale="1 1 1" rotation="-85.259 0 0">
-            <a-light type="point" color="white" intensity="1"></a-light>
+        <a-entity position="0.003 20 14.100" scale="1 1 1" rotation="-85.259 0 0">
+            <a-light type="directional" color="white" intensity="1.8"></a-light>
         </a-entity>
        
         <!-- Céu -->
@@ -141,6 +154,11 @@
     </a-scene>
 
     <script>
+
+        /**
+         * Função lançar cabeças de Alien com física
+        */
+
         let vidas = 3;
         let hit = false
         let resetId = 0
@@ -162,18 +180,29 @@
                     resetId = setTimeout(resetBall,2000)
                 }
             })
-            setTimeout(resetBall,3000)
-       
-           
-        let score = 0;
-        document.querySelector('a-scene').addEventListener('mousedown', function () {
-        $("#tiro").body.position.set(-0.26, 1.65, 14)
-        $("#tiro").body.velocity.set(3, 70, -100)
-        $("#tiro").body.angularVelocity.set(0, 0, 0)
+        setTimeout(resetBall,3000)
 
-        on($("#tiro"),'collide',(e)=>{
+        /**
+         * Função Disparar e contar Score
+        */
+
+        let score = 0;
+        let SomAlien = document.querySelector('#Sominimigo');
+
+        document.querySelector('a-scene').addEventListener('mousedown', function () {
+        let pcamera = document.querySelector('#camera').getAttribute('rotation')
+        console.log(pcamera);
+        
+        $("#PosTiro").setAttribute('rotation', pcamera);
+        $("#PosTiro").body.position.set(-0.049, 1.780, 14.024)
+        $("#PosTiro").body.velocity.set(0, 50, -200)
+
+        let posTiro = document.querySelector('#PosTiro').getAttribute('rotation')
+
+        on($("#PosTiro"),'collide',(e)=>{
             const ball = $("#ball")
             if(e.detail.body.id === ball.body.id && !hit) {
+                SomAlien.components.sound.playSound();
                 hit = true
                 score = score + 1
                 $("#score").setAttribute('text','value','Score '+score)
