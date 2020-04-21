@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,80 +16,91 @@
 <body>
     <a-scene>
         <!-- Audios -->
-        <a-sound id="Sominimigo" src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2FAlien.m4a?v=1587323585459" preload="auto" volume="1"></a-sound> 
+        <a-sound id="SomAlien" src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2FAlien.m4a?v=1587323585459" volume="1.5"></a-sound>
+        <a-sound id="SomNave" src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2FSomNave.mp3?v=1587385210228" autoplay="true" volume="5" loop="true"></a-sound>
+        <a-sound id="SomTiro" src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2FSomTiro.mp3?v=1587385389980" volume="2"></a-sound> 
+        <a-sound id="MusicaDeFundo" src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2FPat%20and%20Janet-MusicaDeFundo.mp3?v=1587385803753" autoplay="true" volume="9"></a-sound> 
 
-        
-
-        <a-entity animation__viajar="property: position; dur: 60000; delay:1000; loop: false; to: 0 0 200;">
-        <!-- Estrelas -->
-        <a-entity id="estrelas" position ="-483.443 -63.492 -187.175">
+        <a-entity id="Planetas&Estrelas" animation__viajar="property: position; dur: 100000; delay:1000; loop: false; to: 0 0 200;">
+        <!-- Estrelas 1 -->
+        <a-entity id="estrelas1" position ="-483.443 -63.492 -187.175">
             <a-gltf-model
             scale = "5 5 5"
             src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fspace.glb?v=1587144441146"></a-gltf-model>
         </a-entity>
         
-        <!-- Estrelas -->
-        <a-entity id="estrelas" position ="-483.443 -63.492 387.175">
+        <!-- Estrelas 2 -->
+        <a-entity id="estrelas2" position ="-483.443 -63.492 387.175">
             <a-gltf-model
             scale = "5 5 5"
             src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fspace.glb?v=1587144441146"></a-gltf-model>
         </a-entity>
        
         <!-- Neptuno -->
-        <a-entity id="neptuno" position="-3.5 2 -95" animation__spin="property: rotation; dur: 52000; loop: true; to: 0 1490 0;">
+        <a-entity id="neptuno" position="25 2 -190" animation__spin="property: rotation; dur: 62000; loop: true; to: 0 1490 0;">
             <a-gltf-model 
-            scale = "0.5 0.5 0.5"
+            scale = "2.5 2.5 2.5"
             src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fneptuno.glb?v=1587243176425" animation-mixer></a-gltf-model>
         </a-entity>
 
         <!-- Urano -->
-        <a-entity id="urano" position="5 2 -70" animation__spin="property: rotation; dur: 52000; loop: true; to: 0 1490 0;">
+        <a-entity id="urano" position="55 2 -145" animation__spin="property: rotation; dur: 62000; loop: true; to: 0 1490 0;">
             <a-gltf-model 
-            scale = "0.5 0.5 0.5"
+            scale = "2.5 2.5 2.5"
             src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Furano.glb?v=1587241506240" animation-mixer></a-gltf-model>
         </a-entity>
 
          <!-- Saturno -->
-         <a-entity id="saturno" position="-9 2 -55" animation__spin="property: rotation; dur: 62000; loop: true; to: 0 1490 0;">
+         <a-entity id="saturno" position="-33 2 -105" rotation="0 0 20"animation__spin="property: rotation; dur: 82000; loop: true; to: 0 1490 0;">
             <a-gltf-model 
-            scale = "2 2 2"
+            scale = "5 5 5"
             src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fsaturno.glb?v=1587241025301" animation-mixer></a-gltf-model>
         </a-entity>
 
         <!-- Jupiter -->
-        <a-entity id="jupiter" position="-13 2 -30" animation__spin="property: rotation; dur: 42000; loop: true; to: 0 1490 0;">
+        <a-entity id="jupiter" position="-37 2 -55" animation__spin="property: rotation; dur: 92000; loop: true; to: 0 1490 0;">
             <a-gltf-model 
-            scale = "2 2 2"
+            scale = "6 6 6"
             src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fjupiter.glb?v=1587239955091" animation-mixer></a-gltf-model>
         </a-entity>
 
         <!-- Marte -->
-        <a-entity id="marte" position="-4 1.5 -5" animation__spin="property: rotation; dur: 42000; loop: true; to: 0 1490 0;">
+        <a-entity id="marte" position="-26 1.5 -10" animation__spin="property: rotation; dur: 62000; loop: true; to: 0 1490 0;">
             <a-gltf-model 
-            scale = "0.3 0.3 0.3"
+            scale = "2 2 2"
             src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fmars.glb?v=1587239473893" animation-mixer></a-gltf-model>
         </a-entity>
 
         <!-- Sol -->
-        <a-entity id="sol" position="4.902 1.5 40" animation__spin="property: rotation; dur: 62000; loop: true; to: 0 1490 0;">
+        <a-entity id="sol" position="10.902 1.5 40" animation__spin="property: rotation; dur: 62000; loop: true; to: 0 1490 0;">
             <a-gltf-model 
             scale = "0.2 0.2 0.2"
             src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fsun.glb?v=1587144421562"></a-gltf-model>
         </a-entity>
 
-        <!-- Terra -->
-        <a-entity id="terra" position ="0 0.751 16.765" animation__spin="property: rotation; dur: 52000; loop: true; to: 0 1490 0;">
+        <!-- Lua -->
+        <a-entity id="lua" position ="-8 1.882 20.765" animation__spin="property: rotation; dur: 62000; loop: true; to: 0 1490 0;">
             <a-gltf-model
-            scale = "0.009 0.009 0.009"
+            scale = "1 1 1"
+            src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Flua.glb?v=1587393141137"></a-gltf-model>
+        </a-entity>
+
+        <!-- Terra -->
+        <a-entity id="terra" position ="0 -1 16.765" animation__spin="property: rotation; dur: 82000; loop: true; to: 0 1490 0;">
+            <a-gltf-model
+            scale = "0.03 0.03 0.03"
             src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fearth.glb?v=1587128473106"></a-gltf-model>
         </a-entity>
 
+        <a-light type="spot" color="#ffffff" intensity="1.110" angle="-90" rotation="0 -180.000 0" position="0 2.971 9.525" distance="21.401"></a-light>
+        <a-light type="spot" color="#0080ff" intensity="16.660" angle="-165.520" rotation="0 -180.000 0" position="3.646 10.515 23.731" distance="13.451"></a-light>
+
         <!-- Asteroide -->
-        <a-entity id="asteroide" position ="7.272 1.451 -16.149" animation__spin="property: rotation; dur: 52000; loop: true; to: 0 1490 0;">
+        <a-entity id="asteroide" position ="-35 2 -170" animation__spin="property: rotation; dur: 52000; loop: true; to: 0 1490 0;">
             <a-gltf-model
-            scale = "1.000 1.000 1.000"
+            scale = "1.5 1.5 1.5"
             src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fasteroide.glb?v=1587306728178"></a-gltf-model>
-        </a-entity>    
+        </a-entity>            
     </a-entity>
 
         <!-- Inimigo -->
@@ -115,7 +125,7 @@
         </a-entity>
 
         <!-- Nave -->
-        <a-gltf-model id="nave" position="0 0.292 14.012"
+        <a-gltf-model id="nave" position="0 0.292 13.96"
         scale="0.100 0.100 0.100"
         rotation = "0 229.650 0"
         src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Fspacecraft.glb?v=1587077313206"></a-gltf-model>
@@ -127,7 +137,7 @@
         src="https://cdn.glitch.com/c93b3326-8f13-429c-ba61-f5c3f64122db%2Ffire.glb?v=1587241901579" animation-mixer></a-gltf-model>
 
         <!-- Tiro -->
-        <a-entity id="PosTiro" position="-0.049 -3 14.024" rotation= "0 0 0" dynamic-body>
+        <a-entity id="PosTiro" position="-0.049 -10 14.024" rotation= "0 0 0" dynamic-body>
           <a-sphere id="tiro" color="red"  position="-0.007 -0.01 -5.075" scale="1 1 1"></a-sphere>
           </a-entity>
 
@@ -148,6 +158,7 @@
         <a-entity position="0.003 20 14.100" scale="1 1 1" rotation="-85.259 0 0">
             <a-light type="directional" color="white" intensity="1.8"></a-light>
         </a-entity>
+        
        
         <!-- Céu -->
         <a-sky color="black"></a-sky>
@@ -177,7 +188,7 @@
                     vidas = vidas - 1
                     $("#vidas").setAttribute('text','value','Vidas ' + vidas)
                     clearTimeout(resetId)
-                    resetId = setTimeout(resetBall,2000)
+                    resetId = setTimeout(resetBall,4000)
                 }
             })
         setTimeout(resetBall,3000)
@@ -187,9 +198,12 @@
         */
 
         let score = 0;
-        let SomAlien = document.querySelector('#Sominimigo');
+        let SomAlien = document.querySelector('#SomAlien');
+        let SomTiro = document.querySelector('#SomTiro');
 
         document.querySelector('a-scene').addEventListener('mousedown', function () {
+        SomTiro.components.sound.stopSound();
+        SomTiro.components.sound.playSound();
         let pcamera = document.querySelector('#camera').getAttribute('rotation')
         console.log(pcamera);
         
